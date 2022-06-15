@@ -18,7 +18,7 @@ const Cart = (props: CartProps) => {
   );
 
   return (
-    <Modal>
+    <Modal onHideCart={props.onHideCart}>
       {cartItems}
       <div
         className="flex justify-between items-center
@@ -33,6 +33,7 @@ const Cart = (props: CartProps) => {
           border-red-600 py-2 px-8 rounded-3xl ml-4
           hover:bg-amber-700 hover:text-white
           hover:active:bg-amber-800 hover:active:text-white"
+          onClick={props.onHideCart}
         >
           Close
         </button>

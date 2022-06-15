@@ -11,7 +11,7 @@ const Header = (props: HeaderProps) => {
       px-20 shadow-md shadow-transparent z-10"
       >
         <h1 className="font-bold text-3xl">ReactMeals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className="h-[25rem] z-0 overflow-hidden">
         <img

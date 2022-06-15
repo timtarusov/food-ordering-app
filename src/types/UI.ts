@@ -9,4 +9,6 @@ export interface InputProps {
   input: React.InputHTMLAttributes<HTMLInputElement>;
 }
 
-export interface ModalProps extends React.PropsWithChildren {}
+export interface ModalProps extends React.PropsWithChildren {
+  onHideCart?: () => void;
+}
